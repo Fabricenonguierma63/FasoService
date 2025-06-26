@@ -1,0 +1,50 @@
+{
+  "@@locale": "fr",
+  "timeSlotsHeader": "Créneaux horaires ({count})",
+  "@timeSlotsHeader": {
+    "description": "En-tête pour le nombre de créneaux",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "duration": "Durée: {duration}",
+  "@duration": {
+    "description": "Affichage de la durée",
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "deleteSlotQuestion": "Êtes-vous sûr de vouloir supprimer ce créneau ?\n{timeRange}",
+  "@deleteSlotQuestion": {
+    "description": "Question de confirmation pour supprimer un créneau",
+    "placeholders": {
+      "timeRange": {}
+    }
+  },
+  "durationHours": "{hours}h",
+  "@durationHours": {
+    "placeholders": {
+      "hours": {}
+    }
+  },
+  "durationHoursMinutes": "{hours}h{minutes}",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {},
+      "minutes": {}
+    }
+  },
+  "durationMinutes": "{minutes}min",
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "timeFormat": "{hour}:{minute}",
+  "@timeFormat": {
+    "placeholders": {
+      "hour": {},
+      "minute": {}
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "685991828106",
+    "project_id": "device-streaming-a4ea5a83",
+    "storage_bucket": "device-streaming-a4ea5a83.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685991828106:android:fc65ecac87083c181fab73",
+        "android_client_info": {
+          "package_name": "com.example.faso_services"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685991828106-f3d0k2j6v8bua74oreo7r1ejteffu7lo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.faso_services",
+            "certificate_hash": "2aa2110e30283c1c29cd4198801eafa0fdaafc4b"
+          }
+        },
+        {
+          "client_id": "685991828106-bn1gqkl9uh2oc3j1ojofsfpb82i10976.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfY0n_h0KRZF1oKiT2SNr6nSpRph9QviA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685991828106-22ou2m7lf3vskl2k7l8i3lo9qecgggeg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

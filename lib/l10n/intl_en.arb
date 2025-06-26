@@ -1,0 +1,50 @@
+{
+  "@@locale": "en",
+  "timeSlotsHeader": "Time slots ({count})",
+  "@timeSlotsHeader": {
+    "description": "Header for the number of time slots",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "duration": "Duration: {duration}",
+  "@duration": {
+    "description": "Duration display",
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "deleteSlotQuestion": "Are you sure you want to delete this time slot?\n{timeRange}",
+  "@deleteSlotQuestion": {
+    "description": "Confirmation question for deleting a time slot",
+    "placeholders": {
+      "timeRange": {}
+    }
+  },
+  "durationHours": "{hours}h",
+  "@durationHours": {
+    "placeholders": {
+      "hours": {}
+    }
+  },
+  "durationHoursMinutes": "{hours}h{minutes}",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {},
+      "minutes": {}
+    }
+  },
+  "durationMinutes": "{minutes}min",
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "timeFormat": "{hour}:{minute}",
+  "@timeFormat": {
+    "placeholders": {
+      "hour": {},
+      "minute": {}
+    }
+  }
+}
