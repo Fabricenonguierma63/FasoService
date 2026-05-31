@@ -1,13 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'dart:io';
-import 'package:firebase_auth/firebase_auth.dart'; // ← Ajouter cette import
+import 'package:firebase_auth/firebase_auth.dart'; 
 import '../models/avis.dart';
 import '../services/avis_service.dart';
 
 class AvisViewModel extends ChangeNotifier {
   final AvisService _avisService = AvisService();
-  final FirebaseAuth _auth = FirebaseAuth.instance; // ← Ajouter cette ligne
-
+  final FirebaseAuth _auth = FirebaseAuth.instance; 
+  
   // État de chargement
   bool _isLoading = false;
   bool get isLoading => _isLoading;
@@ -63,8 +63,8 @@ class AvisViewModel extends ChangeNotifier {
   }) async {
     try {
       if (kDebugMode) {
-        print('🚀 DÉBUT creerAvis()');
-        print('📋 Paramètres reçus:');
+        print(' DÉBUT creerAvis()');
+        print(' Paramètres reçus:');
         print('  - prestataireId: $prestataireId');
         print('  - serviceId: $serviceId');
         print('  - note: $note');
@@ -74,7 +74,7 @@ class AvisViewModel extends ChangeNotifier {
       _setLoading(true);
       _setErreur(null);
 
-      // ✅ CORRECTION 1: Validation des paramètres
+      //  CORRECTION 1: Validation des paramètres
       if (prestataireId.isEmpty ||
           serviceId.isEmpty ||
           commentaire.trim().isEmpty) {
@@ -105,7 +105,7 @@ class AvisViewModel extends ChangeNotifier {
         print('👤 User ID: $currentUserId');
       }
 
-      // ✅ CORRECTION 2: Vérification d'avis existant avec timeout
+      //  CORRECTION 2: Vérification d'avis existant avec timeout
       try {
         if (kDebugMode) {
           print('🔍 Vérification avis existant...');
@@ -142,7 +142,7 @@ class AvisViewModel extends ChangeNotifier {
         // Continuer même si la vérification échoue
       }
 
-      // ✅ CORRECTION 3: Créer l'objet Avis avec validation
+      //  CORRECTION 3: Créer l'objet Avis avec validation
       final avis = Avis(
         id: '', // Sera généré par Firestore
         clientId: currentUserId,
@@ -158,7 +158,7 @@ class AvisViewModel extends ChangeNotifier {
         print('📝 Avis créé: ${avis.toMap()}');
       }
 
-      // ✅ CORRECTION 4: Ajout avec timeout et gestion d'erreur
+      //  CORRECTION 4: Ajout avec timeout et gestion d'erreur
       try {
         if (kDebugMode) {
           print('📡 Appel ajouterAvis...');
@@ -177,12 +177,12 @@ class AvisViewModel extends ChangeNotifier {
           print('✅ Avis ajouté avec succès');
         }
 
-        // ✅ CORRECTION 5: Recharger les données (optionnel, avec gestion d'erreur)
+        //  CORRECTION 5: Recharger les données (optionnel, avec gestion d'erreur)
         try {
           await chargerAvisPrestataire(prestataireId);
         } catch (e) {
           if (kDebugMode) {
-            print('⚠️ Erreur lors du rechargement des avis: $e');
+            print(' Erreur lors du rechargement des avis: $e');
           }
           // Ne pas faire échouer l'opération principale
         }
@@ -194,7 +194,7 @@ class AvisViewModel extends ChangeNotifier {
           print('💥 Erreur lors de l\'ajout de l\'avis: $e');
         }
 
-        // ✅ Messages d'erreur plus spécifiques
+        //  Messages d'erreur plus spécifiques
         String messageErreur = 'Erreur lors de l\'ajout de l\'avis';
         if (e.toString().contains('permission')) {
           messageErreur = 'Vous n\'avez pas les permissions nécessaires';
