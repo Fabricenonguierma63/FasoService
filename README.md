@@ -1,16 +1,14 @@
 # faso_services
 
-A new Flutter project.
+Un nouveau projet développé avec Flutter.
 
-## Getting Started
+## Pour commencer
 
-This project is a starting point for a Flutter application.
+Ce projet constitue un point de départ pour le développement d'une application avec Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+Voici quelques ressources utiles pour vous aider à démarrer si vous développez votre première application Flutter :
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Atelier pratique : développer votre première application Flutter](https://docs.flutter.dev/get-started/codelab)
+- [Recueil d'exemples pratiques Flutter](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Pour obtenir de l'aide et approfondir vos connaissances en développement avec Flutter, consultez la [documentation officielle de Flutter](https://docs.flutter.dev/). Vous y trouverez des tutoriels, des guides, des exemples et une référence complète de l'API.
